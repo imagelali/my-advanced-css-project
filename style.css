@@ -1,0 +1,117 @@
+/*== A FELADAT LEÍRÁSA ==*/
+
+/*== A CodeBerry Scholl haladó css tanfolyamának
+* záróprojektjében azt a feladatot kaptam, hogy
+* egy kis projekt építése során az alábbi kritériumoknak
+* feleljen meg:
+* 1.Grid modul az oldal átfogó layoutjához.
+* 2.Flexbox a komponensek elrendezéséhez.
+* 3.Az oldalon legyenek CSS-animációk.
+* 4.Az oldalon legyenek CSS-függvények.
+* 5.Az architektúra kövesse a tanult elveket.==*/
+
+/*==Ezt az alábbiakban oldottam meg==*/ 
+
+
+
+
+body {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 10vw 50vw 10vw;
+  grid-gap: 1em;
+  margin:1px 5px 1px 5px;
+}
+
+header,
+footer {
+  grid-column: 1 / span 2;
+}
+body {
+  margin: 1em auto;
+  max-width: 56em;
+  padding: 2em 0;
+}
+
+header,
+footer {
+  background:#eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+
+
+img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.gray {
+  filter:grayscale(80%);
+}
+
+  
+main {
+  background-color:lightgreen;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid black;
+}
+
+
+
+
+
+
+div {
+  display: inline-grid;
+  width: 20px;
+  height: 40px;
+  border-radius: 50% 50% 0% 0%;
+  background-color: red;
+  animation: heartbeat .8s ease-out .5s infinite reverse backwards;
+}
+
+#left {
+  position: relative;
+  left: 18px;
+  transform: rotate(-45deg);
+  
+}
+
+#right {
+  position: relative;
+  left: -3px;
+  transform: rotate(45deg);
+  
+}
+
+@keyframes heartbeat {
+  0% {width: 80px; height: 163px;}
+  75% {width: 75px; height: 150px;}
+  100% {width: 80px; height: 163px;}
+}
+ 
+
+
+header {
+  font-family:"Times New Roman",serif;
+  font-weight:bold;
+  text-align:center;
+} 
+
+  
+
+    
+    
+  
+    
+  
+  
+  
+    
+  
